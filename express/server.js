@@ -5,6 +5,11 @@ const port = 3000;
 
 
 
+// Template Engine | ejs
+app.set("view engine", "ejs");
+
+
+
 // Middleware
 app.use((req, res, next) => {
     console.log("Hello Ji! From Middleware.");
@@ -13,6 +18,7 @@ app.use((req, res, next) => {
 
 
 
+/*
 // Static routes
 app.get('/', (request, response) => {
     response.send("Hello Doston!");
@@ -39,6 +45,15 @@ app.get('/profile', (req, res) => {
     `;
     res.send(dataHtml);
 });
+
+*/
+
+
+// Using Template engine
+app.get('/', (req, res) => {
+    res.render("index");
+});
+
 
 
 // Port

@@ -68,5 +68,21 @@ app.get('/aman', (req, res) => {
 
 
 
+// Error route
+app.get('/error', (req, res, next) => {
+    throw Error("This is the default Error Route!");
+});
+
+// Error Handling
+app.use(function errorHandler (err, req, res, next) {
+    if (res.headersSent) {
+      return next(err)
+    }
+    res.status(500)
+    res.render('error', { error: err })
+});
+
+
+
 // Port
 app.listen(port);

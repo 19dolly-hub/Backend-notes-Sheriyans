@@ -35,3 +35,13 @@ configure static files inside the server file using app.use(express.static("./pu
 
 Step 4
 configure the path in html(ejs) files and remove ./public from the path *since the 3rd step auto adds it in the path
+
+
+
+** Steps for error handling
+
+Step 1
+search error handler from google at official website
+
+Step 2
+copy and paste the function before the last router inside the app.use

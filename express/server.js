@@ -8,14 +8,15 @@ const port = 3000;
 // Template Engine | ejs
 app.set("view engine", "ejs");
 
+app.use(express.static("./public"));
 
-
+/*
 // Middleware
 app.use((req, res, next) => {
     console.log("Hello Ji! From Middleware.");
     next();
 });
-
+*/
 
 
 /*

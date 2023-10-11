@@ -1,0 +1,37 @@
+** Steps for ejs
+
+Step 1
+npm i ejs *inside the project folder
+
+Step 2
+app.set("view engine", "ejs"); *before all the routers
+
+Step 3
+folder :- views
+
+Step 4
+make .ejs file(s) to write html
+
+Step 5
+in server file replace .send with .render
+
+Step 6
+inside render :- i. file name for the respective router *without .ejs extension
+                ii. dynamic values in object e.g. {value : "xyz"}
+                iii. <%=  value %> in the ejs file
+
+
+
+** Steps for Static files
+
+Step 1
+create public folder *inside the project folder
+
+Step 2
+create images, stylesheets, scripts folders inside the public folder
+
+Step 3
+configure static files inside the server file using app.use(express.static("./pubic"));
+
+Step 4
+configure the path in html(ejs) files and remove ./public from the path *since the 3rd step auto adds it in the path

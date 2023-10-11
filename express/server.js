@@ -5,21 +5,14 @@ const port = 3000;
 
 
 
-// Template Engine | ejs
-app.set("view engine", "ejs");
-
-app.use(express.static("./public"));
-
-/*
 // Middleware
 app.use((req, res, next) => {
     console.log("Hello Ji! From Middleware.");
     next();
 });
-*/
 
 
-/*
+
 // Static routes
 app.get('/', (request, response) => {
     response.send("Hello Doston!");
@@ -45,41 +38,6 @@ app.get('/profile', (req, res) => {
     <a href="/profile/Maya">Go to Maya's Profile.</a>
     `;
     res.send(dataHtml);
-});
-
-*/
-
-
-// Using Template engine
-app.get('/', (req, res) => {
-    res.render("index");
-});
-
-app.get('/about', (req, res) => {
-    res.render("about");
-});
-
-
-
-// Using variables in ejs pages
-app.get('/aman', (req, res) => {
-    res.render("aman", {myName : "Aman"});
-});
-
-
-
-// Error route
-app.get('/error', (req, res, next) => {
-    throw Error("This is the default Error Route!");
-});
-
-// Error Handling
-app.use(function errorHandler (err, req, res, next) {
-    if (res.headersSent) {
-      return next(err)
-    }
-    res.status(500)
-    res.render('error', { error: err })
 });
 
 

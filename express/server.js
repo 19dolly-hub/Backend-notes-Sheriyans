@@ -60,5 +60,12 @@ app.get('/about', (req, res) => {
 
 
 
+// Using variables in ejs pages
+app.get('/aman', (req, res) => {
+    res.render("aman", {myName : "Aman"});
+});
+
+
+
 // Port
 app.listen(port);

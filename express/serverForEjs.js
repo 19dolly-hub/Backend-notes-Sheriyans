@@ -46,5 +46,14 @@ app.use(function errorHandler (err, req, res, next) {
 
 
 
+// Dynamic Routing with ejs
+app.get('/:username', (req, res) => {
+    if(req.params.username !== "error") {
+        res.render("default", {username : `${req.params.username}`});
+    }
+});
+
+
+
 // Port
 app.listen(port);

@@ -17,32 +17,42 @@ This repository contains a set of backend code examples and documentation to hel
    cd Backend-notes-Sheriyans
    
 3. Now there are two folders.
-   * Modules: Contains simple Node.js module examples.
-     ```shell
-     cd ./modules
-     node index2.js
+* Modules: Contains simple Node.js module examples.
+  ```shell
+  cd ./modules
+  node index2.js
 
-   * Express: Demonstrates basic usage of the Express.js framework for building web applications.
-     ```shell
-     cd ./express
-     ```
-     Install the required dependencies:
+* Express: Demonstrates basic usage of the Express.js framework for building web applications.
+  ```shell
+  cd ./express
+  ```
+  Install the required dependencies:
 
-     ```shell
-     npm install
-     ```
-     Start the server:
-       * For the basic server example:
+  ```shell
+  npm install
+  ```
+  Start the server:
+    * For the basic server with express example:
+      ```shell
+      node server.js
+      ```
+    * For the EJS template example:
+      ```shell
+      node serverForEjs.js
+      ```
+    * For the fetch examples:
+      * api call using bulilt in fetch function of js
          ```shell
-         node server.js
+         node fetchServer.js
          ```
-       * For the EJS template example:
+       * api call using node-fetch module of Node.js
          ```shell
-         node serverForEjs.js
+         node serverForFetch.mjs
+         ```
 
-  4. Open your web browser and visit http://localhost:3000 and http://localhost:3001 to explore the examples.
+ 4. Open your web browser and visit http://localhost:3000, http://localhost:3001 and http://localhost:3002 to explore the examples.
      
-  5. In the steps.txt file, you'll find step-by-step instructions for various concepts, including using EJS, serving static files, and error handling.
+ 5. In the steps.txt file, you'll find step-by-step instructions for various concepts, including using EJS, serving static files, and error handling.
 
 ##
 Feel free to explore the code, experiment with the examples, and use this repository as a learning resource to build your backend development skills.

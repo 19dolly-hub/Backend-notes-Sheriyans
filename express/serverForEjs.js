@@ -30,6 +30,23 @@ app.get('/aman', (req, res) => {
 
 
 
+// fetch api with ejs
+app.get('/fetch', (req, res) => {
+    res.render("fetch");
+});
+
+app.get('/fetchData', (req, res) => {
+    fetch("https://useless-facts.sameerkumar.website/api")
+    .then(response => response.json())
+    .then(obj => {
+        res.json({fact: obj.data});
+    })
+    .catch(error => console.log(error));
+    // res.json({fact: "oo lala oo lala"});
+});
+
+
+
 // Error route
 app.get('/error', (req, res, next) => {
     throw Error("This is the default Error Route!");

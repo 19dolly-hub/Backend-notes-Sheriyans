@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Fact</title>
+    <style>
+        #loader {
+            display: none;
+            width: 10%;
+            color: green;
+            animation: yoyo-x 0.8s infinite;
+        }
+
+        @keyframes yoyo-x {
+            0%{
+                transform: translate(0%);
+            }
+            50%{
+                transform: translate(50%);
+            }
+        } 
+    </style>
+</head>
+<body>
+    <button type="button" id="fact-btn">Get Fact</button>
+    <h4>Fact : <span id="fact"></span></h4>
+    <div id="loader">Loading...</div>
+    <script src="/scripts/fetch.js"></script> <!-- /public/scripts/fetch.js -->
+</body>
+</html>

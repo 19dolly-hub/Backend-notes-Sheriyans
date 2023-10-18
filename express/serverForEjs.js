@@ -43,6 +43,12 @@ app.get('/fetchData', (req, res) => {
     })
     .catch(error => console.log(error));
     // res.json({fact: "oo lala oo lala"});
+    // let dataObj = {
+    //     name: "fact",
+    //     fact: "this is a fact",
+    //     other: 5
+    // }
+    // res.json(JSON.stringify(dataObj));
 });
 
 

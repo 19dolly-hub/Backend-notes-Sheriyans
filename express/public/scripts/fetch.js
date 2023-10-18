@@ -7,6 +7,8 @@ factBtn.addEventListener("click", () => {
     fetch("/fetchData")
     .then(res => res.json())
     .then(data => {
+        // console.log(JSON.parse(data));
+        // data = JSON.parse(data);
         loader.style.display = "none";
         fact.textContent = data.fact;
     })

@@ -1,3 +1,6 @@
+Install nodemon for better experience and then run js files using npx nodemon instead of node
+npm i nodemon -g
+
 ** Steps for ejs
 
 Step 1
@@ -45,3 +48,22 @@ search error handler from google at official website
 
 Step 2
 copy and paste the function before the last router inside the app.use
+
+
+
+** Steps for Express Generator
+
+Step 1
+npm i express-generator -g
+
+Step 2
+Open command prompt *(not terminal or shell)!!
+Run the following commands
+    cd path-to-folder 
+    express desired-appname --view=ejs
+    cd desired-appname
+    npm i
+
+Step 3
+Observe the index.js file in routes where router.get is used instead of app.get
+Run the server using the command npx nodemon 

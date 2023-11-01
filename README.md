@@ -15,8 +15,15 @@ This repository contains a set of backend code examples and documentation to hel
 
    ```shell
    cd Backend-notes-Sheriyans
-   
-3. Now there are two folders.
+
+3. Optional*
+
+  ```shell
+  npm i nodemon -g
+  ```
+  *run js files using the npx nodemon filename command instead of node filename
+
+4. Now there are three folders.
 * Modules: Contains simple Node.js module examples.
   ```shell
   cd ./modules
@@ -45,14 +52,24 @@ This repository contains a set of backend code examples and documentation to hel
          ```shell
          node fetchServer.js
          ```
-       * api call using node-fetch module of Node.js
-         ```shell
-         node serverForFetch.mjs
-         ```
+      * api call using node-fetch module of Node.js
+        ```shell
+        node serverForFetch.mjs
+        ```
+
+* Express-generator: Simplified way of using the Express.js.
+  ```shell
+  cd ./express-generator
+  npm i
+  ```
+  Start the server:
+    ```shell
+    npx nodemon
+    ```
 
  4. Open your web browser and visit http://localhost:3000, http://localhost:3001 and http://localhost:3002 to explore the examples.
      
- 5. In the steps.txt file, you'll find step-by-step instructions for various concepts, including using EJS, serving static files, and error handling.
+ 5. In the steps.txt file, you'll find step-by-step instructions for various concepts, including using EJS, serving static files, and error handling and using express-generator.
 
 ##
 Feel free to explore the code, experiment with the examples, and use this repository as a learning resource to build your backend development skills.

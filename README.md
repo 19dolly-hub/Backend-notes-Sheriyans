@@ -62,7 +62,7 @@ This repository contains a set of backend code examples and documentation to hel
 
  4. Open your web browser and visit http://localhost:3000, http://localhost:3001 and http://localhost:3002 to explore the examples.
      
- 5. In the steps.txt file, you'll find step-by-step instructions for various concepts, including using EJS, serving static files, and error handling and using express-generator.
+ 5. In the [steps.txt](/steps.txt) file, you'll find step-by-step instructions for various concepts, including using EJS, serving static files, and error handling and using express-generator.
 
 ##
 Feel free to explore the code, experiment with the examples, and use this repository as a learning resource to build your backend development skills.

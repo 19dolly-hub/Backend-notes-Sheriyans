@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = 3002;
 
 app.get('/', (req, res) => {
     res.send(`<a href="/api/fetchFact"><button>Get fact</button></a>`);

@@ -16,14 +16,7 @@ This repository contains a set of backend code examples and documentation to hel
    ```shell
    cd Backend-notes-Sheriyans
 
-3. Optional*
-
-  ```shell
-  npm i nodemon -g
-  ```
-  *run js files using the npx nodemon filename command instead of node filename
-
-4. Now there are three folders.
+3. Now there are three folders.
 * Modules: Contains simple Node.js module examples.
   ```shell
   cd ./modules
@@ -64,7 +57,7 @@ This repository contains a set of backend code examples and documentation to hel
   ```
   Start the server:
     ```shell
-    npx nodemon
+    npm start
     ```
 
  4. Open your web browser and visit http://localhost:3000, http://localhost:3001 and http://localhost:3002 to explore the examples.

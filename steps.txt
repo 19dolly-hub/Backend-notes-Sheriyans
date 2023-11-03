@@ -1,6 +1,3 @@
-Install nodemon for better experience and then run js files using npx nodemon instead of node
-npm i nodemon -g
-
 ** Steps for ejs
 
 Step 1
@@ -66,4 +63,4 @@ Run the following commands
 
 Step 3
 Observe the index.js file in routes where router.get is used instead of app.get
-Run the server using the command npx nodemon 
+Run the server using the command npm start

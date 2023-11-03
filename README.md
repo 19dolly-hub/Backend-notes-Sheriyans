@@ -40,15 +40,15 @@ This repository contains a set of backend code examples and documentation to hel
       ```shell
       node serverForEjs.js
       ```
-    * For the fetch examples:
+    * For the fetch example:
       * api call using bulilt in fetch function of js
          ```shell
          node fetchServer.js
          ```
-      * api call using node-fetch module of Node.js
+      <!-- * api call using node-fetch module of Node.js
         ```shell
         node serverForFetch.mjs
-        ```
+        ``` -->
 
 * Express-generator: Simplified way of using the Express.js.
   ```shell
